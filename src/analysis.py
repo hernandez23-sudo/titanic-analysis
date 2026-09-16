@@ -30,13 +30,13 @@ df['AgeGroup'] = pd.cut(df['Age'], bins=bins, labels=labels)
 
 
 # Grafica de supervivencia por sexo
-sns.barplot(x='Sexo', y='Supervivencia', data=df)
+sns.barplot(x='Sex', y='Survived', data=df)
 plt.title('Supervivencia por Sexo')
 plt.savefig('outputs/resultados/graf_sexo.png') # Guardamos la imagen con este codigo en la carpeta de resultados 
 plt.show()
 
 # Grafica sobre supervivencia por clase
-sns.barplot(x='Pclass', y='Supervivencia', data=df)
+sns.barplot(x='Pclass', y='Survived', data=df)
 plt.title('Supervivencia por Clase')
 plt.savefig('outputs/resultados/graf_clase.png')
 plt.show()
